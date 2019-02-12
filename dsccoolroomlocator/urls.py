@@ -42,7 +42,7 @@ schema_view = get_schema_view(
 
 router = DefaultRouter()
 router.register(r'availability', views.AvailabilityViewSet)
-
+router.register(r'room', views.RoomViewSet)
 
 
 urlpatterns = [
