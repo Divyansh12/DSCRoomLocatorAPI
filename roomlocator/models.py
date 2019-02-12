@@ -60,6 +60,9 @@ class Room(CommonModel):
     def __str__(self):
         return '{}-{}'.format(self.block,self.number.number)
 
+    class Meta:
+        unique_together= (("block","number"),)
+
 
 
 class Availability(CommonModel):
