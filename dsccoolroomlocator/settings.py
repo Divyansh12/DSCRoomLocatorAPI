@@ -88,17 +88,19 @@ WSGI_APPLICATION = 'dsccoolroomlocator.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'roomlocatordb',
-        'USER':'postgres',
-        'PASSWORD':'12.divyansh',
-        'HOST':'127.0.0.1',
-        'PORT':'5432',
 
-        
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+                
     }
 }
 
+# 'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'roomlocatordb',
+#         'USER':'postgres',
+#         'PASSWORD':'12.divyansh',
+#         'HOST':'127.0.0.1',
+#         'PORT':'5432',
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
