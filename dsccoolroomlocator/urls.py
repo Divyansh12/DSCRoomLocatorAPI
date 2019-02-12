@@ -43,6 +43,10 @@ schema_view = get_schema_view(
 router = DefaultRouter()
 router.register(r'availability', views.AvailabilityViewSet)
 router.register(r'room', views.RoomViewSet)
+router.register(r'roomnumber', views.RoomNumberViewSet)
+router.register(r'block', views.BlockViewSet)
+router.register(r'period', views.PeriodViewSet)
+router.register(r'day', views.DayViewSet)
 
 
 urlpatterns = [
