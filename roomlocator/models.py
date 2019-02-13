@@ -38,7 +38,7 @@ class Block(CommonModel):
         return self.name
 
 class RoomNumber(CommonModel):
-    number=models.CharField(max_length=3)
+    number=models.CharField(max_length=6)
     
     def __str__(self):
         return self.number

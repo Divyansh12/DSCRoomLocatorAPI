@@ -1,6 +1,8 @@
 import psycopg2
 
-conn = psycopg2.connect("host=ec2-23-21-165-188.compute-1.amazonaws.com dbname=de7vfg255ci4al user=vhwrsjmhplmjab password=db579f9f595f62e12355fe9512089fc4a94af6b0a919d46cabccac39910e71ef")
+#conn = psycopg2.connect("host=ec2-23-21-165-188.compute-1.amazonaws.com dbname=de7vfg255ci4al user=vhwrsjmhplmjab password=db579f9f595f62e12355fe9512089fc4a94af6b0a919d46cabccac39910e71ef")
+
+conn = psycopg2.connect("host=localhost dbname=roomlocatordb user=postgres password=12.divyansh")
 
 cur = conn.cursor()
 
